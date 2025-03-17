@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Enable static exports
+  reactStrictMode: true,
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
+    domains: ['localhost']
   },
   eslint: {
-    ignoreDuringBuilds: true,
-  },
-  trailingSlash: true,
-  reactStrictMode: true,
+    ignoreDuringBuilds: true
+  }
 }
 
 module.exports = nextConfig 
