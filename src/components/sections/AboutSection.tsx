@@ -26,7 +26,7 @@ export default function AboutSection() {
             variants={fadeInUpVariant(0.2)}
             className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
           >
-            <span className="bg-gradient-to-r from-teal-600 to-emerald-600 dark:from-teal-400 dark:to-emerald-400 text-transparent bg-clip-text">Malak Mestini</span>, Future Ingénieure en Supply Chain Management
+            <span className="bg-gradient-to-r from-teal-600 to-emerald-600 dark:from-teal-400 dark:to-emerald-400 text-transparent bg-clip-text">Khaoula Bouhassis</span>, Future Ingénieure en Supply Chain Management
           </motion.h2>
           
           <motion.p 
@@ -69,7 +69,7 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-emerald-500/20 dark:from-teal-500/10 dark:to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
               <Image
                 src="/images/profile-photo.jpg"
-                alt="Malak Mestini - Étudiante en SCM"
+                alt="Khaoula Bouhassis - Étudiante en SCM"
                 width={600}
                 height={700}
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
@@ -155,7 +155,7 @@ export default function AboutSection() {
                   </div>
                   <div>
                     <h5 className="font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">Cycle Ingénieur - Génie Industriel</h5>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">École Nationale des Sciences Appliquées de Tétouan | 2020 - 2024</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">École Nationale des Sciences Appliquées de Tétouan | 2021 - 2025</p>
                   </div>
                 </div>
                 <div className="flex items-start group">
@@ -168,7 +168,7 @@ export default function AboutSection() {
                   </div>
                   <div>
                     <h5 className="font-semibold text-gray-800 dark:text-gray-200 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">Classes Préparatoires Intégrées</h5>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">École Nationale des Sciences Appliquées de Tétouan | 2018 - 2020</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">École Nationale des Sciences Appliquées de Tétouan | 2019 - 2021</p>
                   </div>
                 </div>
               </div>

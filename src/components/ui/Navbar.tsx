@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import Button from './Button';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -102,15 +103,15 @@ export default function Navbar() {
               <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-emerald-600 opacity-20 group-hover:opacity-30 transition-opacity duration-300 rounded-full"></div>
               <Image 
                 src="/images/logo.svg" 
-                alt="Malak Mestini Logo" 
+                alt="Khaoula Bouhassis Logo" 
                 width={40} 
                 height={40}
                 className="object-contain rounded-full"
               />
             </div>
             <div className="relative">
-              <span className="font-bold text-xl text-gray-900 dark:text-white">Malak</span>
-              <span className="font-bold text-xl bg-gradient-to-r from-teal-500 to-emerald-500 text-transparent bg-clip-text">Mestini</span>
+              <span className="font-bold text-xl text-gray-900 dark:text-white">Khaoula</span>
+              <span className="font-bold text-xl bg-gradient-to-r from-teal-500 to-emerald-500 text-transparent bg-clip-text">Bouhassis</span>
               <motion.div 
                 className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full"
                 initial={{ width: 0 }}
@@ -121,7 +122,7 @@ export default function Navbar() {
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="hidden md:block">
             <div className="relative bg-white/10 dark:bg-gray-800/10 backdrop-blur-sm rounded-full p-1 border border-gray-200/20 dark:border-gray-700/20">
               {navItems.map((item) => (
                 <Link 
@@ -149,7 +150,8 @@ export default function Navbar() {
           </nav>
           
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             <Button 
               href="#contact" 
               variant="primary"
@@ -161,7 +163,7 @@ export default function Navbar() {
           </div>
           
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden text-gray-700 dark:text-gray-300 focus:outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle mobile menu"
@@ -209,12 +211,19 @@ export default function Navbar() {
                     </Link>
                   </motion.div>
                 ))}
+                
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: navItems.length * 0.05 }}
                   className="pt-2 mt-2 border-t border-gray-200 dark:border-gray-800"
                 >
+                  <div className="flex items-center justify-between px-4 py-3">
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      Thème
+                    </span>
+                    <ThemeToggle />
+                  </div>
                   <Button 
                     href="#contact" 
                     variant="primary"

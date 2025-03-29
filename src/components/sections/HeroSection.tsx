@@ -72,7 +72,7 @@ export default function HeroSection() {
               variants={fadeInUpVariant(0.2)}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6"
             >
-              Je suis <span className="bg-gradient-to-r from-teal-600 to-emerald-600 dark:from-teal-400 dark:to-emerald-400 text-transparent bg-clip-text">Malak Mestini</span>
+              Je suis <span className="bg-gradient-to-r from-teal-600 to-emerald-600 dark:from-teal-400 dark:to-emerald-400 text-transparent bg-clip-text">Khaoula Bouhassis</span>
             </motion.h1>
             
             <motion.h2
@@ -86,7 +86,7 @@ export default function HeroSection() {
               variants={fadeInUpVariant(0.4)}
               className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl"
             >
-              Étudiante passionnée en génie industriel, spécialisée en Supply Chain Management à l'École Nationale des Sciences Appliquées de Tétouan, combinant expertise technique et vision stratégique pour optimiser les processus logistiques.
+              Étudiante passionnée en ingénierie, spécialisée en Supply Chain Management à l'École Nationale des Sciences Appliquées de Tétouan, combinant expertise technique et vision stratégique pour optimiser les processus logistiques.
             </motion.p>
             
             <motion.div 
@@ -136,7 +136,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Formation</p>
-                  <p className="font-medium text-gray-900 dark:text-white">Cycle Ingénieur</p>
+                  <p className="font-medium text-gray-900 dark:text-white">Ensa Tétouan</p>
                 </div>
               </motion.div>
               
@@ -183,7 +183,7 @@ export default function HeroSection() {
                 <div className="relative w-full h-full rounded-full border-4 border-white/90 dark:border-gray-800/90 shadow-xl overflow-hidden group-hover:border-teal-200 dark:group-hover:border-teal-800/50 transition-colors duration-700 z-10">
                   <Image
                     src="/images/hero-image.jpg"
-                    alt="Malak Mestini - Supply Chain Management Student"
+                    alt="Khaoula Bouhassis - Supply Chain Management Student"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                     priority
@@ -213,10 +213,10 @@ export default function HeroSection() {
               className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
               <Image
-                src="/images/ensa-logo.svg"
+                src="/images/ADE.png"
                 alt="ENSA Tétouan Logo"
-                width={160}
-                height={60}
+                width={320}
+                height={120}
                 className="h-12 w-auto"
               />
             </motion.div>
@@ -226,10 +226,10 @@ export default function HeroSection() {
               className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
               <Image
-                src="/images/uae-logo.svg"
+                src="/images/Université_Abdelmalek_Essaâdi.png"
                 alt="Université Abdelmalek Essaâdi Logo"
-                width={160}
-                height={60}
+                width={320}
+                height={120}
                 className="h-12 w-auto"
               />
             </motion.div>
@@ -239,10 +239,10 @@ export default function HeroSection() {
               className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
               <Image
-                src="/images/morocco-education-logo.svg"
+                src="/images/logo ensa tetouan.png"
                 alt="Ministère de l'Éducation Nationale Logo"
-                width={160}
-                height={60}
+                width={320}
+                height={120}
                 className="h-12 w-auto"
               />
             </motion.div>

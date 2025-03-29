@@ -190,7 +190,7 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">Email</h4>
-                      <p className="text-gray-600 dark:text-gray-300">contact@etudiant-ensa.ma</p>
+                      <p className="text-gray-600 dark:text-gray-300">khaoula.bouhassis@etudiant-ensa.ma</p>
                     </div>
                   </div>
                   
